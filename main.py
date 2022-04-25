@@ -26,8 +26,8 @@ dropout = 0.20 # Network dropout probability
 learning_rate = 1e-4 # AdamW learning rate
 reg_const = 1.0e-9 # L2 regularization
 
-batch_size = 1000#32 # AdamW batch size
-epochs = 1#250 # AdamW epochs 
+batch_size = 32 # AdamW batch size
+epochs = 250 # AdamW epochs 
 
 val_patience = 25 # Consecutive nonincreasing epochs before early stop
 
@@ -99,12 +99,7 @@ for name in filenames:
     
     VAFs_o2o[subject-1] = VAF_o2o
     RMSEs_o2o[subject-1] = RMSE_o2o
-        
-
-
-
-
-    break
+    
     #Save
     metrics_dict = {'VAFs_a2a': VAFs_a2a,
                     'RMSEs_a2a': RMSEs_a2a,
